@@ -1,0 +1,90 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport"
+        content="width=device-width, initial-scale=1.0" />
+
+  <title>SalesAgents AI | Voice Agent</title>
+
+  <link rel="stylesheet" href="style.css" />
+  <script src="script.js" defer></script>
+</head>
+<body>
+  <main class="app">
+    <header>
+      <span class="eyebrow">SALESAGENTS AI ASSIGNMENT</span>
+      <h1>AI Voice Agent</h1>
+      <p>
+        Home Credit LAP qualification
+        — fictional customer demonstration
+      </p>
+    </header>
+
+    <section class="agent-card">
+      <div class="avatar">A</div>
+
+      <h2>Ananya</h2>
+      <p>AI Loan Qualification Assistant</p>
+
+      <div id="status" class="status">
+        Ready to start
+      </div>
+      
+<div id="eligibilityStatus" class="eligibility-status">
+  Eligibility: Not started
+</div>
+
+
+      <button id="startBtn" class="primary">
+        Start Conversation
+      </button>
+
+      <button id="micBtn" disabled>
+        🎤 Speak
+      </button>
+
+      <button id="stopBtn" disabled>
+        Stop Speaking
+      </button>
+
+      <button id="resetBtn">
+        New Conversation
+      </button>
+      
+<button id="downloadBtn" disabled>
+  Download Transcript
+</button>
+
+    </section>
+
+    <section class="chat-card">
+      <div class="chat-header">
+        <h2>Conversation</h2>
+        <span>Live Transcript</span>
+      </div>
+
+      <div id="messages" class="messages"></div>
+
+      <form id="chatForm">
+        <input
+          id="messageInput"
+          type="text"
+          placeholder="Type a message or use the microphone"
+          autocomplete="off"
+          required
+        />
+
+        <button id="sendBtn" type="submit">
+          Send
+        </button>
+      </form>
+    </section>
+
+    <footer>
+      Educational prototype • No real customer calls
+    </footer>
+  </main>
+</body>
+</html>
